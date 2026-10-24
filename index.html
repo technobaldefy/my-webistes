@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>to do list</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class = "logo">
+        <h1>listodo</h1>
+      </div>
+
+      <nav>
+        <a href="#home">home</>
+        <a href="#tasks">tasks</a>
+        <a href="#categories">categories</a>
+        <a href="#progress">progress</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class = "about" id = "home">
+        <div class = "about-txt">
+          <h1>plan your day</h1>
+          <p>manage tasks with ease to complete goals in an organised manner</p>
+          <button> + add new task</button>
+        </div>
+
+        <div class = "about-img">
+          <div class = "checkmark">
+            ✓
+          </div>
+        </div>
+
+      </section>
+
+      <section class = "add-task">
+        <h2>add a new task</h2>
+
+        <div class = "form">
+          <input type="text" placeholder="enter task name"/>
+
+          <select>
+            <option>Select Category</option>
+            <option>Work</option>
+            <option>Study</option>
+            <option>Personal</option>
+            <option>Shopping</option>
+            <option>Health</option>
+          </select>
+
+          <select>
+            <option>Select priority</option>
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+          </select>
+
+          <button>Add Task</button>
+        </div>
+      </section>
+
+      <section class = "statistics">
+        <div class = "stat-box">
+          <h3>5</h3>
+          <p>total tasks</p>
+        </div>
+
+        <div class = "stat-box-completed">
+          <h3>2</h3>
+          <p>completed</p>
+        </div>
+        
+        <div class = "stat-box-pending">
+          <h3>3</h3>
+          <p>pending</p>
+        </div>
+
+        <div class = "stat-box-important">
+          <h3>2</h3>
+          <p>important</p>
+        </div>
+      </section>
+
+      <section class = "tasks" id = "tasks">
+        <div class = "tasks-top">
+          <div>
+            <h2>my tasks</h2>
+           <p>keep track of activities</p> 
+          </div>
+                  
+
+          <select>
+            <option>all tasks</option>
+            <option>completed</option>
+            <option>pending</option>
+            <option>important</option>
+          </select>
+        </div>
+
+        <div class = "card">
+          <div class = "check">
+            <input type="checkbox" checked/>
+          </div>
+          <div class = "card-content">
+            <h3>Prepare weekly team update</h3>
+            <p>Summarize project milestones and share them with the team.</p>
+            <span class = "categoryhere">Work</span>
+            <span class = "priorityhere">High priority</span>
+          </div>
+          <div class = "card-date">
+            <p>📆 Today</p>
+            <button aria-label="Delete task">🗑️</button>
+          </div>
+        </div>
+
+        <div class = "card">
+          <div class = "check">
+            <input type="checkbox"/>
+          </div>
+          <div class = "card-content">
+            <h3>Review biology notes</h3>
+            <p>Go over the cell structure chapter before the quiz.</p>
+            <span class = "categoryhere">Study</span>
+            <span class = "priorityhere">Medium priority</span>
+          </div>
+          <div class = "card-date">
+            <p>📆 Today</p>
+            <button aria-label="Delete task">🗑️</button>
+          </div>
+        </div>
+
+        <div class = "card">
+          <div class = "check">
+            <input type="checkbox" checked/>
+          </div>
+          <div class = "card-content">
+            <h3>Book a dentist appointment</h3>
+            <p>Call the clinic and find an available time this week.</p>
+            <span class = "categoryhere">Health</span>
+            <span class = "priorityhere">High priority</span>
+          </div>
+          <div class = "card-date">
+            <p>📆 Today</p>
+            <button aria-label="Delete task">🗑️</button>
+          </div>
+        </div>
+
+        <div class = "card">
+          <div class = "check">
+            <input type="checkbox"/>
+          </div>
+          <div class = "card-content">
+            <h3>Pick up groceries</h3>
+            <p>Get fruit, bread, and ingredients for dinner.</p>
+            <span class = "categoryhere">Shopping</span>
+            <span class = "priorityhere">Low priority</span>
+          </div>
+          <div class = "card-date">
+            <p>📆 Today</p>
+            <button aria-label="Delete task">🗑️</button>
+          </div>
+        </div>
+
+        <div class = "card">
+          <div class = "check">
+            <input type="checkbox"/>
+          </div>
+          <div class = "card-content">
+            <h3>Take an evening walk</h3>
+            <p>Enjoy a 30-minute walk around the neighborhood.</p>
+            <span class = "categoryhere">Personal</span>
+            <span class = "priorityhere">Medium priority</span>
+          </div>
+          <div class = "card-date">
+            <p>📆 Today</p>
+            <button aria-label="Delete task">🗑️</button>
+          </div>
+        </div>
+      </section>
+
+      <section class = "categories" id = "categories">
+        <h2>Task Categories</h2>
+
+        <div class = "category-cont">
+          <div class = "category-box">
+            <span class = "category-icon">💼</span>
+            <h3>Work</h3>
+            <p>1 task</p>
+          </div>
+        </div>
+
+        <div class = "category-cont">
+          <div class = "category-box">
+            <span class = "category-icon">📚</span>
+            <h3>Study</h3>
+            <p>1 task</p>
+          </div>
+        </div>
+
+        <div class = "category-cont">
+          <div class = "category-box">
+            <span class = "category-icon">🌿</span>
+            <h3>Personal</h3>
+            <p>1 task</p>
+          </div>
+        </div>
+
+        <div class = "category-cont">
+          <div class = "category-box">
+            <span class = "category-icon">🛒</span>
+            <h3>Shopping</h3>
+            <p>1 task</p>
+          </div>
+        </div>
+
+        <div class = "category-cont">
+          <div class = "category-box">
+            <span class = "category-icon">❤️</span>
+            <h3>Health</h3>
+            <p>1 task</p>
+          </div>
+        </div>
+      </section>
+
+      <section class = "progress" id = "progress">
+        <h2>Today's progress</h2>
+
+        <div class = "progress-cont">
+          <div class = "progress-text">
+            <h3>Great start—keep it going!</h3>
+
+            <p>
+              You have completed 2 / 5 tasks today.
+            </p>
+          </div>
+
+          <div class = "progress-bar">
+            <div class = "progress-fill">
+              40%
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class = "footer-content">
+        <h2>listodo.com</h2>
+
+        <p>short description</p>
+
+        <div class = "footer-links">
+          <a href="#home">home</>
+          <a href="#tasks">tasks</a>
+          <a href="#categories">categories</a>
+          <a href="#progress">progress</a>
+        </div>
+
+        <p>copyright info</p>
+      </div>
+    </footer>
+
+
+  </body>  
+</html>
